@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: 'Benjamin',
+  age: 26,
+}
+// me.name()
 
 
 ////////// PROBLEM 2 //////////
@@ -26,23 +30,34 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Sum 41',
+  food: 'Steak',
+  person: 'Melissa',
+  book: 'Secrets of The Millionaire Mind',
+  movie: 'Wreck It Ralph',
+  holiday: 'Halloween'
+}
 
 
 /*
-  After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+  After you've made your object, add another key named 'car' with the value being your favorite car and 
+  then another key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
-
+favoriteThings.car = "Cherokee XJ"
+favoriteThings.brand = 'Jeep'
 
 
 /*
-  Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
+  Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' 
+  and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -52,11 +67,16 @@
   Now, create a variable called 'item' and set it equal to the string 'firstPocket'. 
   Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
   Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
+  Using dot notation, add another key (or property) to your backPack object that is named color, 
+  with the value being the color of your backpack. 
 */
 
 //Code here
-
+var backPack = {}
+var item = 'firstPocket'
+backPack.item = 'firstPocket'
+backPack.firstPocket = 'chapstick'
+backPack.color = 'Green'
 
 
 /*
@@ -65,7 +85,7 @@
 
 //Code here
 
-
+//alert(backPack)
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +117,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -120,16 +141,22 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {}
 
 
 /*
-  Now add two methods (functions that are properties on objects) to your methodCollection object. 
-  One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
+  Now add two methods (functions that are properties on objects) to your methodCollection object.
+  One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 
+  'hello' to the console. 
 */
 
 //Code Here
-
+methodCollection.alertHello = function(){
+  alert('hello')
+}
+methodCollection.logHello = function(){
+  console.log('hello')
+}
 
 
 /*
@@ -137,7 +164,8 @@ var user2 = {
 */
 
 //Code Here
-
+// alertHello()
+// logHello()
 
 
 ////////// PROBLEM 6 //////////
@@ -149,15 +177,22 @@ var user2 = {
 
 //Code Here
 
-
-
+let makePerson = (name, birthday, ssn) => {
+  return newPerson = {name, birthday, ssn}
+}
 ////////// PROBLEM 7 //////////
 
 /*
-  Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object.
+  Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode 
+  to make a Credit Card object.
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
 //Code Here
+// let makeCard = (cardNumber, experationDate, securityCode) => {
+//   return newCard = {cardNumber, experationDate, securityCode}
+// }
 
-
+function makeCard(cardNumber, experationDate, securityCode) {
+  return newCard = {cardNumber, experationDate, securityCode}
+}
